@@ -1,0 +1,207 @@
+*{box-sizing: border-box;}
+.PortfolioWebsite{
+    padding: 0% 5vw;
+}
+.portHeroSection{
+    display: flex;
+    height: calc(100vh - 25vh);
+    justify-content: center;
+    align-items: center;
+}
+.portHeroSection img{
+    width: 40%;
+    height: 50vh;
+    object-fit: contain;
+}
+.portHeroSection .portHeroText{
+    width: 60%;
+    display: flex; flex-direction: column;
+    gap: 1vw;
+}
+.portHeroText{
+    height: 100%;
+    display: flex; flex-direction: column;
+    justify-content: center;
+}
+.portHeroText #passion{
+    font-size: 2vw;
+}
+.portHeroText h1{
+    font-size: 4vw;
+}
+.portHeroText #Pintro{
+    font-size: 1.4vw;
+    width: 70%;
+}
+.portHeroText button{
+    padding: 1vw 2vw;
+    background-color: white;
+    font-size: 1.3vw;
+    width: 20vw;
+    border-radius: 2vw;
+    border: 1px solid black;
+}
+.Pfoot{
+    height: 10vh;
+    gap: 3vw;
+    border-top: 2px solid rgba(128, 128, 128, 0.296);
+    padding-top: 1.5vw;
+}
+.Pfoot a{
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.548);
+}
+.Pfoot a:hover{color: black;}
+
+
+/* aboutPortfolio  */
+
+.Paboutus{
+    height: calc(100vh - 15vh);
+    padding: 0vw 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Paboutus img{
+    width: 35%;
+    object-fit: contain;
+    height: 70%;
+}
+.Paboutus .PaboutText{
+    width: 60%;
+}
+.PaboutText{
+    /* padding: 2vw 4vw; */
+    display: flex; flex-direction: column;gap: 2vw;
+}
+.PaboutText p{
+    font-size: 1.4vw;
+}
+#discover{font-size: 1.2vw;}
+
+td{font-size: 1.4vw;}
+
+/* Reusme  */
+
+
+@media (max-width : 768px){
+    .portHeroSection{
+        flex-direction:column;
+        align-items: start;
+        justify-content: start;
+        /* height: 70vh; */
+    }
+    .PortfolioWebsite{
+        margin: 0%;
+        gap: 0vw;
+    }
+    .portHeroSection img{
+        width: 90vw;
+        height: 35vh;
+        object-fit: contain;
+    }
+    .portHeroText{
+        width: 90vw !important;
+        height: 33vh;
+        justify-content: start;
+        align-items: center;
+        margin: 0%;
+    }
+    .portHeroText #passion{
+        font-size: 5vw;
+    }
+    #myName{
+        font-size: 10vw;
+    }
+    .portHeroText #Pintro{
+        font-size: 4.4vw;
+        width: 90vw; text-align: center;
+    }
+    .Pfoot a{
+        font-size: 5vw;
+        color: blue;
+    }
+    .Pfoot{
+        margin: 0%;
+        border-top: 0cap;
+        margin-top: 0%;
+        height: 0%;
+    }
+    /* pabout  */
+    .Paboutus{
+        box-sizing: border-box;
+        padding: 1vw 1vw 0vw 1vw;
+    }
+
+    .PaboutText #PaboutTextHeading{
+        font-size: 10vw;
+        text-align: center;
+        width: 90vw;
+    }
+    .PaboutText{
+        width: 90vw;
+    }
+    #discover{
+        font-size: 5vw !important;
+        text-align: center;
+        width: 90vw;
+    }
+    #PaboutTable{
+        width: 90vw;
+    }
+    #PaboutTable{
+        border-top: 1px solid black;
+        padding-top: 3vw;
+    }
+    .tableData{
+        font-size: 4.4vw;
+        width: 35%;
+    }
+    .lastTd{
+        font-size: 4.4vw;
+    }
+    #PaboutSummaryDiv{
+        width: 90vw;
+    }
+    #PaboutSummary{
+        font-size: 4vw;
+        width: 90vw;
+        text-align:justify;
+        margin: 0%;
+        padding: 0%;
+    } 
+    .Paboutus img{
+        position: relative;
+        bottom: 10vw;
+        width: 90vw;
+        margin: 0%; padding: 0%;
+        height: 25vh;
+        object-fit: contain;
+    }
+        .Paboutus {
+          flex-direction: column;
+          align-items: start;
+          margin: 0vw 15px;
+        }
+      
+        .PaboutText {
+          margin-left: 0;
+          position: relative;
+          bottom: 8vw;
+          text-align: start;
+        }
+        
+        #PaboutTextHeading {
+          font-size: 1.8rem;
+        }
+      
+        #discover {
+          font-size: 1rem;
+        }
+        table td {
+        padding: .3vw;
+        font-size: 4.4vw;
+        }
+}

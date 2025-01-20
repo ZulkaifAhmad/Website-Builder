@@ -1,0 +1,124 @@
+nav{
+     justify-content: space-between;
+    padding: 0vw 4vw;
+    height: 15vh;
+}
+.flex{display: flex;}
+.navHeading{
+    align-items: center; gap: 1vw;
+}
+.navHeading img{
+    width: 2vw;
+    height: 2vw;
+    object-fit: contain;
+}
+.navHeading h1{
+    font-size: 2vw;  letter-spacing: -0.5px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navLinks{
+    display: flex; gap: 3vw;
+    align-items: center;
+}
+.navLinks a:hover{
+    color: black;
+}
+.navLinks a{
+    font-size: 1.4vw;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.548);
+}
+.navLinks .color{
+    color: black;
+}
+.navLinks .green{background-color: lightgreen;}
+#specialLink{
+    background-color: #2258EA;
+    color: white;
+    padding: .3vw;
+    border-radius: 4px;
+    font-size: 1.2vw;
+}
+
+
+/* footer  */
+
+
+footer {
+    padding: 1vw 4vw;
+    margin-top: 2vw;
+}
+.footUpper{
+display: flex; align-items: center;
+justify-content: space-between;
+border-bottom: 2px solid gray;
+padding-bottom: 2vw;
+}
+.footIcons{align-items: center; gap: 1vw;}
+.footIcons i{ justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    background-color: whitesmoke;
+    width: 5vw; height: 5vw; border-radius: 25vw;
+}
+.footLower{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 3vw;
+}
+.footIntro{
+    width: 40vw;
+}
+.footIntro h1{
+    font-size: 2vw;
+    line-height: 2vw;
+}
+.footIntro p{font-size: 1.3vw; margin-top: 1vw;}
+.footSupport{
+flex-direction: column; gap: 1vw; 
+width: 30vw;
+padding-left: 10vw;
+}
+.footSupport h1{
+    font-size: 2vw;
+    line-height: 2vw;
+}
+.footSupport a{
+    font-size: 1.4vw;
+    color: black;
+    text-decoration: none;
+}
+.footServ{
+    padding-left: 0vw;
+}
+
+
+
+.navLinks {
+    display: none; 
+}
+
+.navLinks.visible {
+    display: flex; 
+}
+
+.navLinks.hidden {
+    display: none; 
+}
+
+@media (min-width: 768px) {
+    .navLinks {
+        display: flex !important; /* Always visible on larger screens */
+    }
+
+    #menu {
+        display: none; 
+        /* Hide menu icon on larger screens */
+    }
+}

@@ -1,0 +1,260 @@
+.justify{justify-content: center;}
+.align{align-items: center;}
+.flex{display: flex;}
+.direction{
+    flex-direction: column;
+}
+.buildPortfolio{
+    padding: 1vw 4vw;
+}
+#basicHeading{
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+}
+.inputs{
+    display: flex;
+    gap: 3vw;
+    margin-bottom: 1vw;
+}
+.inputs div{
+    display: flex;
+    flex-direction: column;
+    gap: .3vw;
+    width: 100%;
+}
+
+.basicDetails input{
+    height: 3.5vw;
+    width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.3vw;
+}
+.basicDetails label{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.inputs select{
+    height: 3.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.3vw;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+    margin-bottom: 1vw;
+}
+.address #address{
+    height: 4vw;
+    font-size: 1.3vw;
+    padding: 1vw;
+    resize: none;
+}
+.btn{
+    display: flex;
+    justify-content: end;
+}
+.btn button{
+    background-color: #2258EA;
+    color: white;
+    height: 10vh; cursor: pointer;
+    font-size: 1.4vw;
+    width: 15vw;
+    border: none;
+    border-radius: 1vw;
+    transition: .3s all ease;
+}
+
+.btn button:hover{
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+}
+.btn button:active{
+    scale: 1.1;
+}
+
+
+/* Education  */
+
+.education{
+    padding: 1vw 4vw;
+    position: relative;
+}
+.eduHeading{
+    text-align: center;
+}
+#pageNumber{
+    font-size: 1.1vw;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: 400;
+    left: 4vw;
+    position: absolute;
+}
+#schoolName{
+    height: 4vw;
+    font-size: 1.3vw;
+    padding: 1vw;
+    resize: none;
+}
+#eduDesc{
+    text-align: center; font-size: 1.4vw;
+    margin-top: 1vw;
+}
+.eduForm{
+    margin-top:3vw ;
+}
+.eduForm input{
+    height: 3.5vw;
+    width: 100%;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.3vw;
+}
+.eduForm label{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.eduDesc .eduDescChild,.collegeName{
+    height: 4vw;
+    padding: 1vw; resize: none;
+    font-size: 1.3vw;
+}
+.eduBtn{display: flex; justify-content: space-between; margin-top: 4vw;}
+.eduBtn button{
+    background-color: #2258EA;
+    color: white;
+    height: 10vh; cursor: pointer;
+    font-size: 1.4vw;
+    width: 15vw;
+    border: none;
+    border-radius: 1vw;
+    transition: .3s all ease;
+}
+
+.eduBtn button:hover{
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+}
+.eduBtn button:active{
+    scale: 1.1;
+}
+
+.sameHeadings{
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+.sameHeading{
+    font-size: 2vw;
+    margin: 2vw 2vw 2vw 0vw;
+}
+
+
+@media (max-width : 768px){
+    .buildPortfolio {
+        margin-top: 5vh;
+    }
+    #basicHeading{
+        margin-top: 4vh;
+    }
+    .buildHeading h2{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .buildHeading #pageNumber{
+        top:8vh;
+        left: 5vw;
+        font-size: 3.8vw;
+    }
+    #basicHeading{
+        font-size: 4.4vw;
+    }
+    .inputs{
+        display: flex;
+        margin: 1vw 0vw;
+        flex-direction: column;
+    }
+    .basicDetails .inputField{
+        height: 6vh; width: 90vw;
+        font-size: 4.4vw; padding-left: 3vw;
+    }
+    .basicDetails .inputLabel{
+        font-size: 4.4vw;
+    }
+    
+    .btn .NextBtn{
+        width: 40vw;
+        height: 6vh;
+        margin-top: 3vh;
+        margin-right: 2vw;
+        font-size: 4.4vw;
+    }
+     .address #address{
+        height: 6vh; width: 90vw;
+        font-size: 4.4vw; padding-left: 3vw;
+    }
+
+
+    #eduDesc{
+        font-size: 4.4vw;
+    }
+    .pageNumber{
+        font-size: 5vw;
+    }
+    .eduHeading{
+        font-size: 6vw;
+        text-align: center;
+    }
+    .education{
+        position: static;
+        margin-top: 4vh;
+    }
+    #pageNumber{
+        position: absolute;
+        top:8vh;
+        left: 5vw;
+        font-size: 3.8vw;
+    }
+    .sameHeading {
+        font-size: 4vw;
+        margin-top: 3vh;
+    }
+    .inputs>div>.inputLabel{
+        font-size: 4.4vw;
+    }
+    .inputs>div>.inputField{
+        height: 6vh; width: 90vw;
+        font-size: 4.4vw; padding-left: 3vw;
+    }
+    .address>.inputLabel{
+        font-size: 4.4vw;
+    }
+    .address>#schoolName, .address>.inputField{
+        width: 90vw;
+        height: 6vh;
+        padding-top: 1.5vh;
+        padding-left: 3vw;
+        font-size: 4.4vw;
+    }
+    .sameHeading{
+        font-size: 6vw;
+    }
+    .eduBtn .eduButton{
+        width: 40vw;
+        height: 6vh;
+        margin-top: 3vh;
+        margin-right: 2vw;
+        font-size: 4.4vw;
+    }
+    .workheading .workHeading{
+        font-size: 5.5vw;
+        text-align: center;
+        margin-top: 4vh;
+    }
+    .workheading #workP{
+        font-size: 4.4vw;
+        text-align: center;
+    }
+
+    
+}
+

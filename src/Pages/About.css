@@ -1,0 +1,257 @@
+.about{
+    padding: 0vw 4vw;
+}
+
+.knowaboutWe{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;  margin: 0vw 0vw 4vw 0vw;
+    gap: 1vw;
+}
+.knowaboutWe h2{
+    font-size: 2.5vw; line-height: 2vw;
+    padding: 0%;
+    line-height: 1vw;
+}
+.knowaboutWe p{
+    margin: 0%;
+    padding: 0;
+    font-size: 2vw;
+}
+.aboutHero{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 60vh;
+    margin-top: 5vw;
+}
+.aboutTextPart{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 0vw 3vw 0vw 3vw;
+    width: 60%;
+}
+.aboutTextPart div{
+    display: flex;
+    flex-direction: column; gap: .5vw;
+}
+.aboutTextPart div h2{font-size: 2.3vw;}
+.aboutTextPart div p{font-size: 1.3vw;}
+.img{
+    width: 40%;
+    height: 100%;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+    object-fit: cover;
+}
+.contact{
+    padding: 1vw 4vw;
+}
+.contactHeading{
+    gap: 1vw;
+    display: flex; align-items: center;
+    flex-direction: column; justify-content: center;
+}
+.contactHeading h2{
+    font-size: 2vw;
+}
+.contactHeading p{
+    font-size: 1.4vw;
+}
+
+
+/* form  */
+.contactPageForm{margin-top: 4vw;}
+.contactPageForm{
+    display: flex; gap: 2vw;
+    flex-direction: column;
+}
+.contactPageForm .contactFormRapp{
+    display: flex ; gap: 2vw;
+}
+.contactPageForm .contactFormRapp input{
+    height: 8vh; width: 50%;
+    font-size: 1.3vw; padding-left: 1vw;
+}
+.textareaMap{
+    display: flex;
+    gap: 2vw;
+}
+.textareaMap textarea{
+    width: 49%; padding: 1vw 0vw 0vw 1vw;
+    height: 20vw; resize: none; font-size: 1.3vw;
+}
+.contactPageForm button{
+    background-color: #2258EA;
+    color: white;
+    height: 10vh; cursor: pointer;
+    font-size: 1.4vw;
+    width: 15vw;
+    border: none;
+    border-radius: 1vw;
+    transition: .3s all ease;
+}
+.contactPageForm button:hover i{
+    padding-left: .4vw;
+}
+.contactPageForm button:hover{
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.3);
+}
+.contactPageForm button:active{
+    scale: 1.1;
+}
+.textareaMap iframe{
+    width: 50%;
+    height: 20vw;
+    border: none;
+}
+
+
+
+/* PRIVACY  */
+
+
+.privacy{
+    padding: 1vw 4vw;
+}
+.privacyHeading{
+    display: flex; flex-direction: column; gap: 1vw;
+    justify-content: center; align-items: center; 
+}
+.privacyHeading h2{font-size: 2vw;}
+.privacyHeading p{
+    font-size: 1.3vw;
+}
+.privacyContainer{
+    width: 90%;
+    margin-top: 3vw;
+}
+.privacy h3{font-size: 1.7vw;}
+.privacyContainer p{font-size: 1.2vw;}
+.direction{flex-direction: column;}
+.gap{gap: .6vw;}
+.margin{margin-top: 1vw;}
+.privacyContainer li{
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .knowaboutWe {
+        padding: 0;
+        margin: 0;
+        height: 10vh;
+    }
+
+    .knowaboutWe p {
+        font-size: 5vw;
+    }
+
+    .knowaboutWe h2 {
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+
+    .aboutHero {
+        display: block;
+        gap: 20px;
+        height: 100%;
+        /* background-color: lightblue; */
+        flex-wrap: wrap;
+    }
+
+    .aboutHero img {
+        max-width: 100%;
+        height: auto;
+    }
+    .aboutTextPart h2{
+        font-size: 5vw;
+    }
+
+
+    .contact{
+        margin-top: 3vh;
+    }
+    .contactHeading h2{
+        font-size: 6vw;
+    }
+    .contactHeading p{
+        font-size: 4.4vw;
+        text-align: center;
+    }
+    .contactFormRapp{
+        flex-direction: column;
+    }
+    .contactPageForm .contactFormRapp input{
+        height: 6vh; width: 90vw;
+        font-size: 4.4vw; padding-left: 3vw;
+    }
+    .textareaMap{
+        flex-direction: column;
+    }
+    .textareaMap textarea {
+        width: 90vw;
+        height: 20vh;
+        font-size: 4.4vw;
+        padding: 3vw;
+    }
+    .textareaMap iframe{
+        width: 90vw;
+        height: 19vh;
+        margin-bottom: 5vw;
+    }
+    .contactPageForm button{
+        width: 90vw;
+        height: 7vh;
+        font-size: 5vw;
+    }
+
+
+    .privacy{
+        margin-top: 3vh;
+    }
+    .privacyHeading h2{
+        font-size: 6vw;
+    }
+    .privacyHeading p{
+        font-size: 4.4vw;
+        text-align: center;
+    }
+    .privacyIntro h3{
+        font-size: 5vw;
+    }
+    .privacyIntro p{
+        font-size: 4.4vw;
+        width: 90vw;
+    }
+
+    .privacyContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .privacyPersonal h3{
+        font-size: 5vw;
+    }
+    .privacyPersonal p{
+        font-size: 4.4vw;
+    }
+    .privacyPersonal p>li{
+        width: 90vw;
+    }
+    .privacyUse h3{
+        font-size: 5vw;
+    }
+    .privacyUse p{
+        font-size: 4.4vw;
+    }
+    .privacyUse p>li{
+        width: 90vw;
+    }
+    
+}

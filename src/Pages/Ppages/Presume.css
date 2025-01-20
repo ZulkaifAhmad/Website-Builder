@@ -1,0 +1,216 @@
+*{box-sizing: border-box;}
+.resume{
+    padding: 0vw 5vw; box-sizing: border-box;
+    margin-bottom: 5vw;
+    height: calc(100vh - 15vh);
+}
+.resumeHero{
+    display: flex; flex-direction: column;
+    gap: 1vw; align-items: center; justify-content: center;
+}
+.resumeHero p{font-size: 1.4vw;}
+.eduExp{
+    margin-top: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+.eduExp #educationSection{
+    display: flex; flex-direction: column;
+    gap: 1vw;
+}
+.eduExp div>.degreeCard {
+    display: flex; 
+    gap: 1.5vw;
+}
+
+.degreeCard i {
+    font-size: 3vw;
+}
+.degreeCard{width: 40vw;}
+#degreeCardText h2{
+    font-size: 1.5vw;
+}
+.head2{
+    margin-bottom: 1.5vw;
+}
+.experienceCard{
+    margin: 2vw 0vw;
+}
+
+/* services  */
+
+.Pservices{
+    padding: 0vw 5vw;
+    height: calc(100vh - 15vh );
+    box-sizing: border-box;
+}
+.Pserhero{
+    display: flex; flex-direction: column; gap: .5vw;
+    justify-content: center; align-items: center;
+}
+.Pserhero h1{
+    font-size: 2.3vw;
+}
+.Pserhero p{font-size: 1.4vw;}
+
+.ServicesCards{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 1vw;
+}
+.sameServiceCards{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+.combineSkillCards{
+    display: flex;
+}
+.sameServiceCards h2{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.servCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+    width: 28vw; border-radius: .4vw;
+    padding: 1vw;
+    min-height: 32vh;
+    background: linear-gradient(140deg,white,whitesmoke,white);
+}
+.servCard i{
+    font-size: 3vw;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 1vw;
+}
+.servCard p{
+    text-align: start;
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+    text-align: center;
+    width: 100%;
+}
+.servicefirstCard{
+    padding: 3vw;
+    background-color: red;
+}
+
+@media (max-width : 768px) {
+    #resumeHeading{
+        font-size: 8vw;
+    }
+    .resume{
+        padding: 4.3vw;
+    }
+    #SkillText{
+        font-size: 5vw;
+        text-align: center;
+    }
+    .eduExp{
+        flex-direction: column;
+    }
+    #educationSection{
+        width: 90vw;
+        margin: 6vw 0vw;
+    }
+    #educationSection .head2{
+        font-size: 6vw;
+    }
+    #degreeIconDev .DegreeIcon{
+        font-size: 8vw;
+        margin-right: 2vw;
+    }
+    #degreeCardText #coldegreeShow{
+        font-size: 5vw; width: 80vw;
+        line-height: 7vw;
+    }
+    #degreeCardText .degreeP{
+        font-size: 4.4vw;
+    }
+    .head2{
+        font-size: 6vw;
+    }
+    #ExperiencePart{
+        margin-bottom: 14vw;
+    }
+    .degreeCard{
+        margin: 3vw 0vw;
+    }
+    #ExperiencePart .degreeCard{
+        margin: 5vw 0vw;
+        width: 89vw;
+    }
+
+    /* services  */
+
+    .Pserhero h1{
+        font-size: 8vw;
+        text-align: center;
+        line-height: 10vw;
+        margin-top: 3vh;
+    }
+    .Pserhero p{
+        margin-top: .5vh;
+        font-size: 5vw; text-align: center;
+    }
+    #ServicesHeading , #SkillHeading{
+        font-size: 6vw;
+    }
+    .servicefirstCard{
+        width: 90vw;
+        height: 20vh;
+        background:linear-gradient(120deg,whitesmoke,whitesmoke white);
+    }
+    .servIcon i{
+        font-size: 15vw;
+    }
+    #serviceName{
+        font-size: 6vw;
+    }
+    .skillSection{
+        margin: 4vw 0vw;
+    }
+    .servCard .serviceDetail{
+        font-size: 4.4vw;
+        line-height: 4.5vw;
+    }
+    .combineSkillCards{
+        flex-wrap: wrap;
+    }
+    .combineSkillCards .servCard{
+        width: 45vw;        
+        min-height: 22vh;
+        font-size: 5vw;
+    }
+    .servCard .SkillIcon,.servCard .ProjectIcon{
+        font-size: 10vw;
+        padding: 3vw;
+    }
+    .servCard h2{
+        font-size: 5vw;
+        text-align: center;
+        font-weight: 600;
+    }
+    .servCard p{
+        font-size: 4.4vw;
+        line-height: 4.4vw;
+    }
+    #ProjectHeading{
+        font-size: 7vw;
+    }
+    .projectSection{
+        margin-bottom: 10vw;
+    }
+    #ProjectName{
+        font-size: 6.5vw;
+    }
+}

@@ -1,0 +1,19 @@
+
+@media (max-width: 768px) {
+    .aboutTextPart div>h2{
+        font-size: 6vw;
+        width: 80vw;
+    }
+    .aboutTextPart div>p{
+        font-size: 4.5vw;
+        width: 85vw;
+    }
+    .img{
+        width: 85vw;
+        margin-left: 3vw;
+        /* height: 50vh; */
+    }
+    .aboutTextPart{
+        margin-bottom: 10vw;
+    }
+}

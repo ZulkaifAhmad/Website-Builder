@@ -1,0 +1,77 @@
+.portNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0vw 5vw;
+}
+
+.portLinks {
+    display: flex;
+    gap: 3vw;
+    font-size: 1.4vw;
+}
+
+.portLinks a {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.595);
+}
+
+.portLinks a:hover {
+    color: black;
+}
+
+.portLinks a:active {
+    color: blue;
+}
+
+#menu {
+    display: none; /* Initially hidden for large screens */
+}
+
+
+@media (max-width: 768px) {
+    .PortfolioName{
+        font-size: 8vw;
+    }
+    .portNavigation {
+        height: 12vh;
+        padding: 0 5vw;
+    }
+
+    .portLinks {
+        flex-direction: column;
+        position: fixed;
+        top: 10vh;
+        right: 4vw;
+        background-color: whitesmoke;
+        padding: 5vw;
+        border-radius: 1vw;
+        display: none; /* Hidden by default */
+        z-index: 100;
+        width: 50vw;
+    }
+    .portLinks hr{
+        display: none;
+    }
+
+    .portLinks a {
+        font-size: 6vw;
+        margin-bottom: 2vw;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    #menu {
+        display: block; /* Show menu icon on smaller screens */
+        font-size: 8vw;
+        position: fixed;
+        top: 7vw;
+        right: 4vw;
+        z-index: 101;
+        cursor: pointer;
+    }
+
+    .portLinks.show {
+        display: flex; /* Show links when the menu is toggled */
+    }
+}
