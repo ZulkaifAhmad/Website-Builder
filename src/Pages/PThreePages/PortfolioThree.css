@@ -1,0 +1,455 @@
+.PortfolioThree{
+    position: relative;
+    z-index: 1;
+    padding: 0vw 5vw;
+    height:85vh;
+    gap: 1vw;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+}
+#Womens{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+.portThreeNav{
+    position: relative;
+    z-index: 100;
+    /* color: white; */
+}
+#ThreeName{
+    font-size: 5vw;
+    line-height: 5.5vw;
+    color: blue;
+}
+#ThreeMainSkill{
+    font-size: 3.5vw;
+    line-height: 3.6vw;
+    color: white;
+}
+#ThreeIntro{
+    font-size: 1.5vw; color: white;
+    width: 47%; text-align: center;
+}
+#Threebtn{
+    width: 15vw; border: none;
+    height: 3.5vw; border-radius: 5vw;
+    font-size: 1.4vw;
+}
+
+
+/* PortfolioThreeAbout  */
+
+.PortfolioThreeAbout{
+    padding: 1vw 5vw;
+}
+.threeLine{
+    width: 5vw;
+    height: .2vw;
+    background-color: blue;
+}
+.ThreeUpper{
+    display: flex; align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.ThreeAboutText{
+    display: flex; 
+    margin-top: 2vw;
+}
+.threeText{
+    width: 60%;
+    display: flex; gap: 1vw;
+    flex-direction: column;
+}
+.threeImg{
+    width: 40%; overflow: hidden;
+    height: 30vw;
+}
+.threeImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#threeAboutIntro{
+    font-size: 1.3vw;
+    width: 85%;
+}
+#whyHire{
+    font-size: 2.4vw;
+}
+.ThreeLi{
+    font-size: 2vw;
+}
+#unOrderList{
+    margin-left: 2vw;
+}
+
+
+/* PortfolioThreeServices  */
+
+#PortfolioThreeServices{
+    padding: 1vw 5vw;
+}
+.ThreeCard{
+    background-color: whitesmoke;
+    border-radius: 2vw;
+    align-items: center;
+    width: 25vw;
+    display: flex; padding: 1vw;
+    flex-direction: column;
+    gap: 1vw;
+}
+.combineThree{
+    display: flex;
+    gap: 1vw ;
+    align-items: center;
+}
+.spark{
+    font-size: 3vw;
+}
+#serviceNameThree{
+    font-size: 1.8vw;
+}
+.arrow{
+    font-size: 2vw;
+}
+.ThreeServiceP{
+    font-size: 1.5vw;
+    text-align: center;
+}
+.ThreeP{
+    display: flex; flex-direction: column;
+    gap: .1vw;
+}
+.threeServiceCard{
+    display: flex;
+    margin-top: 4vw;
+    justify-content: space-around;
+}
+
+
+/* PortfolioThreeResume */
+
+
+.PortfolioThreeResume{
+    padding: 1vw 5vw;
+}
+.allButton{
+    display: flex;
+    align-items: center; margin-top: 1vw;
+    justify-content: center;
+    gap: 1vw;
+}
+.allButtons{
+    display: flex; align-items: center;
+    justify-content: center; gap: 2vw;
+    font-weight: 600;
+    cursor: pointer;
+    width: 17vw; font-size: 1.5vw;
+    height: 4.4vw; background-color: rgba(245, 245, 245, 0.517);
+    border: .1vw solid rgb(241, 241, 241);
+}
+.upLine{
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+.ResumeAbout{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 0vw;
+    height: 59vh;
+}
+.ThreeResumeImage {
+    width: 30vw; overflow: hidden;
+    height: 54vh; 
+    
+}
+.ThreeResumeImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ThreeResumeText{
+    width: 60vw;
+    display: flex; flex-direction: column;
+    gap: 1vw;
+    padding: 1vw;
+}
+#baisedPak{
+    font-size: 2.4vw;
+}
+#threeResumeIntro{
+    font-size: 1.3vw;
+}
+.threeTd{
+    font-size: 1.6vw;
+    width: 10vw;
+    color: rgba(0, 0, 0, 0.818);
+}
+.threeTdTwo{
+    font-size: 1.6vw;
+}
+
+.smallCardP{
+    font-size: 1.4vw;
+}
+.smallTitle{
+    font-size: 2vw;
+}
+.smallCard{
+    border: .1vw solid wheat;
+    width: 25vw;
+    padding: 1vw 0vw 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+}
+
+.ThreeResumeText.ThreeexperienceTextPart {
+    display: flex; flex-wrap: wrap;
+    padding: 2vw 0vw;
+}
+
+.ThreeSkills{
+    display: flex;
+    padding: 1vw;
+}
+.threeSkillApart{
+    padding: 3vw 1vw;
+    gap: 1vw;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+.threeSkillSmallCard{
+    border: .1vw solid wheat;
+    padding: 1vw; align-items: center;
+    display: flex; gap: .4vw;
+}
+.threeskill{
+    font-size: 3vw;
+}
+.subApart strong{
+    font-size: 1.5vw;
+}
+.subApart p{
+    font-size: 1.4vw;
+}
+
+.ThreeEducation{
+    display: flex;
+    padding: 1vw;
+}
+.ThreeEducationCards{
+    padding: 3vw 1vw;
+    width: 60vw; gap: 1vw;
+    display: flex; flex-wrap: wrap;
+}
+.ThreeEducationCard .SameP{
+    font-size: 1.3vw;
+}
+.ThreeEducationCard{
+    width: 25vw;
+    padding: 1vw;
+    border: .1vw solid wheat;
+}
+.white {
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+@media (max-width : 768px) {
+    .PortfolioThree{
+        gap: 3vh;
+        margin-top: 10vh;
+        justify-content: start;
+        height: 50vh;
+    }
+    #ThreeName{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    #ThreeMainSkill{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    #ThreeIntro{
+        font-size: 5vw;
+        width: 100%;
+        line-height: 6vw;
+    }
+    #Threebtn{
+        width: 50%;
+        height: 5vh;
+        font-size: 5vw;
+    }
+
+    /* about  */
+
+    .threeLine{
+        height: .2vh;
+        width: 10vw;
+    }
+    .ThreeAboutText{
+        flex-direction: column;
+    }
+    .threeText{
+        width: 100%;
+        margin-top: 3vh ;
+    }
+    #whyHire{
+        font-size: 5vw;
+        width: 100%;
+    }
+    #threeAboutIntro{
+        font-size: 4.4vw;
+        width: 100%;
+    }
+    .ThreeLi{
+        font-size: 5vw;
+        margin-left: 4vw;
+    }
+    .threeImg{
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 2vh;
+    }
+
+    /* resume  */
+    .allButton{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 3vh;
+    }
+    .allButtons{
+        width: 40vw;
+        height: 5vh;
+        font-size: 5vw;
+    }
+    .upLine{
+        font-size: 5vw;
+    }
+    .ResumeAbout{
+        flex-direction: column-reverse;
+        justify-content: start;
+        height: 85vh;
+    }
+    .ThreeResumeImage{
+        height: 40vh;
+        width: 100%;
+    }
+    .ThreeResumeText{
+        width: 100%;
+        padding: 1vw 3vw;
+    }
+    #baisedPak{
+        font-size: 5vw;
+    }
+    #threeResumeIntro{
+        font-size: 5vw; text-align: justify;
+        width: 100%;
+    }
+    .threeTd{
+        font-size: 4.5vw;
+        width: 30vw;
+    }
+    .threeTdTwo{
+        font-size: 4.4vw;
+    }
+    #threeTable{
+        margin-top: 3vh;
+    }
+    #baisedPak{
+        font-size: 7vw;
+        margin-top: 3vh;
+    }
+
+    /* small card  */
+
+    .smallCard{
+        width: 100%;
+        padding: 2vw;
+    }
+    .smallCardP{
+        font-size: 4.4vw;
+    }
+    .smallTitle{
+        font-size: 6vw;
+    }
+
+    /* ThreeSkills */
+
+    .ThreeSkills{
+        flex-direction: column-reverse;
+    }
+    .threeSkillApart{
+        flex-direction: column;
+    }
+    .threeSkillSmallCard{
+        padding: 2vw;
+        gap: 4vw;
+    }
+    .threeskill{
+        font-size: 7vw;
+    }
+    .subApart strong{
+        font-size: 5vw;
+    }
+    .subApart p{
+        font-size: 4.4vw;
+    }
+
+    /* ThreeEducation */
+
+    .ThreeEducation{
+        flex-direction: column-reverse;
+        margin-top: 3vh;
+    }
+    .ThreeEducationCards{
+        flex-direction: column;
+        gap: 3vw;
+    }
+    .ThreeEducationCard{
+        width: 85vw;
+    }
+    .ThreeEducationCard .SameP{
+        font-size: 4.4vw;
+    }
+    .ThreeEducationCard h2{
+        font-size: 6vw;
+    }
+
+    /* threeServices  */
+
+    .threeServiceCard{
+        flex-direction: column;
+        gap: 1vh;
+    }
+    .ThreeCard{
+        width: 100%;
+        padding: 4vw;
+    }
+    .spark{
+        font-size: 10vw;
+    }
+    #serviceNameThree{
+        font-size: 5.5vw;
+        font-weight: 700;
+    }
+    .arrow{
+        font-size: 5.5vw;
+    }
+    .ThreeServiceP{
+        font-size: 4.4vw;
+    }
+
+}

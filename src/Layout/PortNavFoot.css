@@ -3,75 +3,104 @@
     justify-content: space-between;
     align-items: center;
     height: 15vh;
-    padding: 0vw 5vw;
+    padding: 0 5vw;
 }
 
 .portLinks {
     display: flex;
     gap: 3vw;
     font-size: 1.4vw;
+    position: relative;
+    z-index: 20000;
 }
 
 .portLinks a {
     font-weight: 600;
-    color: rgba(0, 0, 0, 0.595);
+    text-decoration: none;
+    color: inherit;
+}
+
+.portLinks a.home {
+    color: white !important;
+}
+
+.portLinks a.other {
+    color: black !important;
 }
 
 .portLinks a:hover {
-    color: black;
+    color: gray !important;
 }
 
 .portLinks a:active {
-    color: blue;
+    color: blue !important;
 }
+.PortfolioName.home {
+    color: white !important;
+  }
+  
+  .PortfolioName.other {
+    color: black !important;
+  }
+  .PortfolioName {
+    display: block;
+    font-size: 2.5vw;
+    color: black;  /* Default color for other pages */
+  }
+  
+  .PortfolioName.home {
+    color: white;  /* White color for the home page */
+  }
+    
 
 #menu {
-    display: none; /* Initially hidden for large screens */
+    display: none;
 }
 
-
 @media (max-width: 768px) {
-    .PortfolioName{
+    .PortfolioName {
         font-size: 8vw;
+        position: relative;
+        z-index: 100000;
     }
     .portNavigation {
         height: 12vh;
         padding: 0 5vw;
     }
-
     .portLinks {
         flex-direction: column;
         position: fixed;
         top: 10vh;
         right: 4vw;
-        background-color: whitesmoke;
+        background-color: gray;
         padding: 5vw;
         border-radius: 1vw;
-        display: none; /* Hidden by default */
-        z-index: 100;
+        display: none;
+        z-index: 999;
         width: 50vw;
+        pointer-events: all;
     }
-    .portLinks hr{
+
+    .portLinks.show {
+        display: flex;
+    }
+
+    .portLinks hr {
         display: none;
     }
 
     .portLinks a {
         font-size: 6vw;
         margin-bottom: 2vw;
-        color: rgba(0, 0, 0, 0.8);
     }
 
     #menu {
-        display: block; /* Show menu icon on smaller screens */
+        display: block;
         font-size: 8vw;
         position: fixed;
         top: 7vw;
         right: 4vw;
         z-index: 101;
         cursor: pointer;
-    }
-
-    .portLinks.show {
-        display: flex; /* Show links when the menu is toggled */
     }
 }

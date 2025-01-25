@@ -9,8 +9,7 @@ function Services() {
     const onSubmit = (data) => {
         console.log(data);
         setState(data)
-
-        navigate('/buildportfolio/edu/wordhistory/summary/skills/projects/services/portfoliowebsite','_blank');
+        navigate('/buildportfolio/edu/wordhistory/summary/skills/projects/services/templates');
     };
     
     const handleProcessToWebsite = () => {
@@ -70,15 +69,16 @@ function Services() {
                         </div>
                     </div>
 
-                    <div className="rapperBtn flex gap">
+                    {/* <div className="rapperBtn flex gap"> */}
                         <div className="eduBtn">
                             <NavLink to="/buildportfolio/edu/wordhistory/summary/skills/projects">
                                 <button className='workBtn' type="button">Previous</button>
                             </NavLink>
-                        </div>
-                        <div className="eduBtn createWebsite">
+                            <button className="workBtn" type="submit">Next</button>
+                        {/* </div> */}
+                        {/* <div className="eduBtn createWebsite">
                             <button className='CreateBtn' type="submit">Process to Website</button>
-                        </div>
+                        </div> */}
                     </div>
                 </form>
             </div>

@@ -17,11 +17,20 @@ import Projects from "./Pages/Projects.jsx";
 import Services from "./Pages/Services.jsx";
 import PortfolioWebsite from "./Pages/PortfolioWebsite.jsx";
 import PAboutus from "./Pages/Ppages/PAboutus.jsx";
-// import Pcontact from "./Pages/Ppages/Pcontact.jsx";
-// import Pportfolio from "./Pages/Ppages/Pportfolio.jsx";
 import Presume from "./Pages/Ppages/Presume.jsx";
 import Pservices from "./Pages/Ppages/Pservices.jsx";
 import { Forms } from "./context/FormContext.jsx";
+import Templates from "./Pages/Templates.jsx";
+import PortfolioTwoLayout from "./Layout/PortfolioTwoLayout.jsx";
+import PortFolioTwo from "./Pages/PTwoPages/PortFolioTwo.jsx";
+import PortTwoAbout from "./Pages/PTwoPages/PortTwoAbout.jsx";
+import PortTwoResume from "./Pages/PTwoPages/PortTwoResume.jsx";
+import PortTwoServices from "./Pages/PTwoPages/PortTwoServices.jsx";
+import PortfolioThreeLayout from './Layout/PortfolioThreeLayout.jsx';
+import PortfolioThree from './Pages/PThreePages/PortfolioThree.jsx';
+import PortfolioThreeAbout from './Pages/PThreePages/PortfolioThreeAbout.jsx';
+import PortfolioThreeResume from "./Pages/PThreePages/PortfolioThreeResume.jsx";
+import PortfolioThreeServices from "./Pages/PThreePages/PortfolioThreeServices.jsx";
 
 let router = createBrowserRouter([
   {
@@ -72,48 +81,86 @@ let router = createBrowserRouter([
         path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services",
         element: <Services />,
       },
-    ]
+      {
+        path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/templates",
+        element: <Templates />,
+      },
+    ],
   },
   {
     path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/portfoliowebsite",
     element: <PortfolioLayout />,
     children: [
-        {
-          path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/portfoliowebsite",
-          element: <PortfolioWebsite />
-        },
-        {
-          path: "pabout",
-          element: <PAboutus />
-        },
-        {
-          path: "resume",
-          element: <Presume />
-        },
-        // {
-        //   path: "portfolio",
-        //   element: <Pportfolio />
-        // },
-        {
-          path: "pservices",
-          element: <Pservices />
-        },
-        // {
-        //   path: "pcontact",
-        //   element: <Pcontact />
-        // },
-      ]
-  }
-  
-  
+      {
+        path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/portfoliowebsite",
+        element: <PortfolioWebsite />,
+      },
+      {
+        path: "pabout",
+        element: <PAboutus />,
+      },
+      {
+        path: "resume",
+        element: <Presume />,
+      },
+      {
+        path: "pservices",
+        element: <Pservices />,
+      },
+    ],
+  },
+  {
+    path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/templates/portfolioTwo",
+    element: <PortfolioTwoLayout />,
+    children: [
+      {
+        path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/templates/portfolioTwo",
+        element: <PortFolioTwo />,
+      },
+      {
+        path: "PortTwoabout",
+        element: <PortTwoAbout />,
+      },
+      {
+        path: "PortTworesume",
+        element: <PortTwoResume />,
+      },
+      {
+        path: "PortTwoservices",
+        element: <PortTwoServices />,
+      },
+    ],
+  },
+  {
+    path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/templates/portfolioThree",
+    element: <PortfolioThreeLayout />,
+    children: [
+      {
+        path: "/buildportfolio/edu/wordhistory/summary/skills/projects/services/templates/portfolioThree",
+        element: <PortfolioThree />,
+      },
+      {
+        path: "PortThreeAbout",
+        element: <PortfolioThreeAbout />,
+      },
+      {
+        path: "PortThreeResume",
+        element: <PortfolioThreeResume />,
+      },
+      {
+        path: "PortThreeServices",
+        element: <PortfolioThreeServices />,
+      },
+    ],
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-      <Forms>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
-      </Forms>
+    <Forms>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </Forms>
   </StrictMode>
 );
