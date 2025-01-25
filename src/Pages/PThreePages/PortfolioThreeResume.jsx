@@ -32,7 +32,7 @@ function PortfolioThreeResume() {
         active === "About" && (
           <div className="ResumeAbout">
             <div className="ThreeResumeImage">
-              <img src="/public/ThreePic.jpg" alt="img" />
+              <img src="ThreePic.jpg" alt="img" />
             </div>
             <div className="ThreeResumeText">
               <h1 id='baisedPak'>Based In {state.nationality}</h1>
@@ -59,7 +59,7 @@ function PortfolioThreeResume() {
         active === "Experience" && (
           <div className="ResumeAbout">
             <div className="ThreeResumeImage">
-              <img src="/public/ThreePic.jpg" alt="img" />
+              <img src="ThreePic.jpg" alt="img" />
             </div>
             <div className="ThreeResumeText ThreeexperienceTextPart">
               <SmallCard date={state.jobStartDate} companyName={state.Jobcompany} title={state.jobTitle}/>
@@ -72,7 +72,7 @@ function PortfolioThreeResume() {
         active === "Skills" && (
           <div className="ThreeSkills">
             <div className="ThreeResumeImage">
-              <img src="/public/ThreePic.jpg" alt="img" />
+              <img src="ThreePic.jpg" alt="img" />
             </div>
             <div className='threeSkillApart'>
               <div className="threeSkillSmallCard">
@@ -104,7 +104,7 @@ function PortfolioThreeResume() {
         active === "Education" && (
           <div className="ThreeEducation">
             <div className="ThreeResumeImage">
-              <img src="/public/ThreePic.jpg" alt="img" />
+              <img src="ThreePic.jpg" alt="img" />
             </div>
             <div className="ThreeEducationCards">
               <div className="ThreeEducationCard">
